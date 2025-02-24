@@ -37,8 +37,8 @@ public class Habitacion {
         return isFree;
     }
 
-    public void setEstatus(boolean isFree) {
-        this.isFree = isFree;
+    public void setFree(boolean free) {
+        isFree = free;
     }
 
     public String getTipo() {
@@ -80,12 +80,16 @@ public class Habitacion {
         System.out.println("No. de camas: " + getCamas());
         System.out.println("Capacidad: " + getCapacidad());
         System.out.println("Está ocupada: " + isFree());
+        System.out.println("Está limpia: " + isClean());
     }
 
     public void limpiarHabitacion() {
-        if(isFree == true) {
+        if(isFree) {
             isClean = true;
             System.out.println("La habitación ha sido limpiada.");
+        } else {
+            System.out.println("La habitación está en uso");
         }
+
     }
 }
