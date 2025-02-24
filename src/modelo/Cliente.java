@@ -54,6 +54,7 @@ public class Cliente {
     }
 
     public void mostrar() {
+        System.out.println("Detalles del Cliente");
         System.out.println("ID: " + getId());
         System.out.println("Correo: " + getCorreo());
         System.out.println("Nombre: " + getNombre());
