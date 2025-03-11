@@ -8,56 +8,28 @@ package modelo;
  *
  * @author angelcruz
  */
-public class Cliente {
-    private int id;
-    private String correo;
-    private String nombre;
-    private int telefono;
+public class Cliente extends Persona {
+    private int id_usuario;
 
-    public Cliente(int id, String correo, String nombre, int telefono) {
-        this.id = id;
-        this.correo = correo;
-        this.nombre = nombre;
-        this.telefono = telefono;
+    public Cliente(String nombre, String genero, int telefono, String correo, int id_usuario) {
+        super(nombre, genero, telefono, correo);
+        this.id_usuario = id_usuario;
     }
 
-    public int getId() {
-        return id;
+    public int getId_usuario() {
+        return id_usuario;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
     public void mostrar() {
         System.out.println("Detalles del Cliente");
-        System.out.println("ID: " + getId());
-        System.out.println("Correo: " + getCorreo());
+        System.out.println("ID: " + getId_usuario());
         System.out.println("Nombre: " + getNombre());
+        System.out.println("Género: " + getGenero());
         System.out.println("Teléfono: " + getTelefono());
+        System.out.println("Correo: " + getCorreo());
     }
 }
