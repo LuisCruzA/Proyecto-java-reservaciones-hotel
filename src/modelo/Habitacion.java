@@ -8,21 +8,23 @@ package modelo;
  *
  * @author angelcruz
  */
-public class Habitacion {
+public abstract class Habitacion {
     private int numhabit;
     private boolean isFree;
     private String tipo;
     private int camas;
     private int capacidad;
     private boolean isClean;
+    private double precioXNoche;
 
-    public Habitacion(int numhabit, boolean isFree, String tipo, int camas, int capacidad, boolean isClean) {
+    public Habitacion(int numhabit, boolean isFree, String tipo, int camas, int capacidad, boolean isClean, double precioXNoche) {
         this.numhabit = numhabit;
         this.isFree = isFree;
         this.tipo = tipo;
         this.camas = camas;
         this.capacidad = capacidad;
         this.isClean = isClean;
+        this.precioXNoche = precioXNoche;
     }
 
     public int getNumhabit() {
@@ -73,12 +75,21 @@ public class Habitacion {
         isClean = clean;
     }
 
+    public double getPrecioXNoche() {
+        return precioXNoche;
+    }
+
+    public void setPrecioXNoche(double precioXNoche) {
+        this.precioXNoche = precioXNoche;
+    }
+
     public void mostrar() {
         System.out.println("Detalles de la Habitación");
         System.out.println("No. de habitación: " + getNumhabit());
         System.out.println("Tipo: " + getTipo());
         System.out.println("No. de camas: " + getCamas());
         System.out.println("Capacidad: " + getCapacidad());
+        System.out.println("Precio por noche: $" + getPrecioXNoche() + " MXN");
         System.out.println("Está ocupada: " + isFree());
         System.out.println("Está limpia: " + isClean());
     }
