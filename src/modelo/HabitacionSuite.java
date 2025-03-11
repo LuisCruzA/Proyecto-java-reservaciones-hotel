@@ -1,4 +1,4 @@
-package pruebausuario;
+package modelo;
 
 public class HabitacionSuite extends Habitacion {
 
