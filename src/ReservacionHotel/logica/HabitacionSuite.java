@@ -1,4 +1,6 @@
-package modelo;
+package ReservacionHotel.logica;
+
+import ReservacionHotel.logica.Habitacion;
 
 public class HabitacionSuite extends Habitacion {
 

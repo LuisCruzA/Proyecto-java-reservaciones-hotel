@@ -1,4 +1,4 @@
-package modelo;
+package ReservacionHotel.logica;
 
 public abstract class Persona {
     private String nombre;
