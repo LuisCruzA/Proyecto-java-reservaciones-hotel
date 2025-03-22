@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-C:\Users\yamir\Proyecto-java-reservaciones-hotel\src\ReservacionHotel\persistencia\Bd.java
+
 public class Bd {
     // Configuración para Railway
     private final String HOST = "yamanote.proxy.rlwy.net";
