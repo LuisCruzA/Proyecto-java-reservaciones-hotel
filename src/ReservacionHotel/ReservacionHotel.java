@@ -15,7 +15,7 @@ import java.sql.Connection;
  */
 public class ReservacionHotel {
     public static void main(String[] args) {
-        Bd conexion = new Bd();
+        /*Bd conexion = new Bd();
         
         try {
             conexion.getConexion();
@@ -36,10 +36,12 @@ public class ReservacionHotel {
                 System.out.println(e.getMessage());
             }
         }
-    }
-        /*
+    }*/
+        
         Principal prin = new Principal();
+        prin.setTitle("Login");
         prin.setVisible(true);
          prin.setLocationRelativeTo(null);
-         */
+        
+}
 }
