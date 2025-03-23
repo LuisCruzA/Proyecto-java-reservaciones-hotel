@@ -71,7 +71,9 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setBackground(new java.awt.Color(102, 0, 0));
         jButton3.setFont(new java.awt.Font("Helvetica Neue", 2, 13)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(204, 204, 0));
         jButton3.setText("Usuario");
         jButton3.setToolTipText("");
         jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
