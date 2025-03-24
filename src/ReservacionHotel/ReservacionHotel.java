@@ -4,6 +4,7 @@
  */
 package ReservacionHotel;
 
+import ReservacionHotel.GUI.MenuOpc;
 import ReservacionHotel.GUI.Principal;
 import ReservacionHotel.persistencia.Bd;
 import java.sql.ResultSet;
@@ -42,6 +43,10 @@ public class ReservacionHotel {
         prin.setTitle("Login");
         prin.setVisible(true);
          prin.setLocationRelativeTo(null);
+         
+         /*MenuOpc m = new MenuOpc();
+         m.setVisible(true);*/
+        
         
 }
 }
