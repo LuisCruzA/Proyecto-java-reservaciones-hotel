@@ -44,8 +44,8 @@ public class ReservacionHotel {
         prin.setVisible(true);
          prin.setLocationRelativeTo(null);
          
-         /*MenuOpc m = new MenuOpc();
-         m.setVisible(true);*/
+         
+         
         
         
 }
