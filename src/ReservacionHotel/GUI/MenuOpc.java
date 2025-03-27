@@ -37,7 +37,6 @@ public class MenuOpc extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(60, 0, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Administración");
         jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -48,7 +47,6 @@ public class MenuOpc extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(60, 0, 0));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Reservaciones");
         jButton2.setBorder(null);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -59,7 +57,6 @@ public class MenuOpc extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(60, 0, 0));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Habitaciones Disponibles");
         jButton3.setBorder(null);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -120,9 +117,9 @@ public class MenuOpc extends javax.swing.JFrame {
     
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Principal prin = new Principal();
-        prin.setVisible(true);
-        prin.setLocationRelativeTo(null);
+        MenuAdmin a = new MenuAdmin();
+        a.setVisible(true);
+        a.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 

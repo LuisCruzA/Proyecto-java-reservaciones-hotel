@@ -4,7 +4,9 @@
  */
 package ReservacionHotel.GUI;
 
+import ReservacionHotel.logica.LoginDAO;
 import java.awt.Color;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -47,7 +49,6 @@ public class Principal extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jButton4.setBackground(new java.awt.Color(102, 0, 0));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Login");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,11 +158,38 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_txtContraseñaActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        String usuario = txtUsuario.getText();
+    String contraseña = new String(txtContraseña.getPassword());
         
-        MenuOpc mo = new MenuOpc();
+        if(txtUsuario.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Debe de ingresar el usuario",
+                    "Error",JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if(txtContraseña.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Debe de ingresar la contraseña",
+                    "Error",JOptionPane.INFORMATION_MESSAGE);
+        }
+        else {
+        // Instanciar la clase LoginDAO y verificar el login
+        LoginDAO loginDAO = new LoginDAO();
+        boolean accesoPermitido = loginDAO.verificarLogin(usuario, contraseña);
+        
+        if (accesoPermitido) {
+            JOptionPane.showMessageDialog(null, "Inicio de sesión exitoso", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+            
+            // Aquí abres la nueva ventana (Interfaz de inicio)
+            MenuOpc mo = new MenuOpc();
         mo.setVisible(true);
         mo.setLocationRelativeTo(null);
         this.dispose();
+        } else {
+            JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+        /*MenuOpc mo = new MenuOpc();
+        mo.setVisible(true);
+        mo.setLocationRelativeTo(null);
+        this.dispose();*/
     }//GEN-LAST:event_jButton4ActionPerformed
 
    

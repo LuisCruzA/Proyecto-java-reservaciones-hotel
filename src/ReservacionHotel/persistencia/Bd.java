@@ -29,7 +29,7 @@ public class Bd {
             String url = "jdbc:postgresql://" + HOST + ":" + PUERTO + "/" + DB;
 
             conexion = DriverManager.getConnection(url, USER, PASSWORD);
-            JOptionPane.showMessageDialog(null, "Conexión exitosa a Railway");
+            //JOptionPane.showMessageDialog(null, "Conexión exitosa a Railway");
 
         } catch (ClassNotFoundException e) {
             JOptionPane.showMessageDialog(null, "Error: No se encontró el driver de PostgreSQL.");

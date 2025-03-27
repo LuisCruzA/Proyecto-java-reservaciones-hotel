@@ -19,7 +19,7 @@ public class ReservacionHotel {
        /* Bd conexion = new Bd();
         
         try {
-            conexion.getConexion();
+            conexion.getConexion();x
 
             ResultSet resultado = conexion.consultarBD("SELECT * FROM empleado");
             
