@@ -1,0 +1,113 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: #1E1E1E;
+  }
+  
+  /* Header de Habitaciones */
+  .habitaciones-header {
+    background-color: #446EB7;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .habitaciones-header h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  
+  .habitaciones-header h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  
+  /* Contenedor Principal */
+  .habitaciones-main {
+    padding: 40px 60px;
+  }
+  
+  /* Cards de Habitaciones */
+  .habitaciones-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  /* Cada Habitación */
+  .habitacion-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .habitacion-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .habitacion-card h3 {
+    color: #082348;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .habitacion-card p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  /* Botón de Reserva */
+  .reserva-button {
+    display: inline-block;
+    background-color: #4D82CA;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 2px solid white;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .reserva-button:hover {
+    background-color: #3a69a6;
+    transform: scale(1.05);
+  }
+  
+  .volver-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: white;
+    color: #1C4277;
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .volver-button:hover {
+    background-color: #1C4277;
+    color: white;
+  }
+  

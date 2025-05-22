@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="estilologin.css" />
+  
+</head>
+<body>
+  <div class="background">
+    <div class="form-container">
+      <h1 class="title">Login</h1>
+      <p class="subtitle">
+        Inicia sesión con tu cuenta para acceder a nuestros servicios
+      </p>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="usuario@gmail.com">
+      </div>
+
+      <div class="form-group">
+        <label for="loginPassword">Contraseña</label>
+        <div class="password-wrapper">
+          <input type="password" id="loginPassword" placeholder="Introduce tu contraseña">
+          <span id="toggleLoginPassword" class="toggle-icon">👁️</span>
+        </div>
+      </div>
+
+   
+      <a href="Pagina Principal.html" class="submit-button">Iniciar Sesión</a>
+
+
+      <p class="login-text">
+        No tienes una cuenta? <a class="bold" href="registro.html">Regístrate</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const loginPassword = document.getElementById("loginPassword");
+    const toggleLoginPassword = document.getElementById("toggleLoginPassword");
+
+    toggleLoginPassword.addEventListener("click", () => {
+      const isPassword = loginPassword.type === "password";
+      loginPassword.type = isPassword ? "text" : "password";
+      toggleLoginPassword.textContent = isPassword ? "🙈" : "👁️";
+    });
+  </script>
+</body>
+</html>
+
